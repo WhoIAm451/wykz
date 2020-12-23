@@ -9,7 +9,7 @@ module.exports = {
         try {
 
         let inviteLink = 'https://discord.com/api/oauth2/authorize?client_id=788877393766514688&permissions=2138566007&scope=bot';
-        let supportLink = 'https://www.youtube.com/watch?v=OGYu6Kj3bL0';
+        let supportLink = 'https://discord.gg/BARHQFDTCC';
 
         let embed = new MessageEmbed()
             .setColor("RANDOM")
