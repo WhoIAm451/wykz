@@ -15,7 +15,7 @@ const { GiveawaysManager } = require('discord-giveaways')
 const { Player } = require('discord-player');
 const Schema = require('./models/custom-commands');
 
-mongoose.connect('mongodb+srv://admin:AzLADSp2cgA6FRUb@koronechan.m0ilc.mongodb.net/KoroneChan?retryWrites=true&w=majority', {
+mongoose.connect(process.env.mongo, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
 }).then(console.log('Connected to mongodb'))
@@ -150,4 +150,4 @@ client.on('guildMemberRemove', async(member) => { // this event gets triggered w
     // sends a message to the channel
     Channel.send(embed)
 })*/
-client.login(token)
+client.login(process.env.token)
