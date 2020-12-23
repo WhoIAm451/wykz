@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@discordjs/opus": "^0.3.3",
+    "@k3rn31p4nic/google-translate-api": "^1.1.1",
     "@reconlx/discord.js": "^1.1.101",
     "ascii-table": "0.0.9",
     "atob": "^2.1.2",
