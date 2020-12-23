@@ -72,7 +72,9 @@ client.on('guildDelete', async (guild) => {
     })
 })
 client.on('ready', async () => {
-    client.user.setActivity(`${client.users.cache.size} users | ${prefix}help`, { type: "WATCHING" })
+    setInterval(async () => {
+        client.user.setActivity(`${client.users.cache.size} users | ${prefix}help`, { type: "WATCHING" })
+    }, 60000);
     console.log(`${client.user.username} ✅`)
 })
 const blacklist = require('./models/blacklist')
