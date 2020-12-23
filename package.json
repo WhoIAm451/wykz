@@ -1,0 +1,39 @@
+{
+  "name": "commandhandler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.3.3",
+    "@reconlx/discord.js": "^1.1.101",
+    "ascii-table": "0.0.9",
+    "atob": "^2.1.2",
+    "beautify": "0.0.8",
+    "common-tags": "^1.8.0",
+    "discord-giveaways": "^4.3.0",
+    "discord-player": "^3.0.3",
+    "discord.js": "^12.2.0",
+    "figlet": "^1.5.0",
+    "fs": "0.0.1-security",
+    "got": "^11.8.1",
+    "images-scraper": "^5.0.7",
+    "indent-string": "^4.0.0",
+    "moment": "^2.29.1",
+    "mongoose": "^5.11.8",
+    "ms": "^2.1.3",
+    "nekos.life": "^2.0.7",
+    "node-fetch": "^2.6.1",
+    "quick.db": "^7.1.3",
+    "random-ipv6": "^1.0.2",
+    "reconlx": "^1.0.52",
+    "request-promise-native": "^1.0.9",
+    "snekfetch": "^4.0.4",
+    "translate-google": "^1.4.3"
+  }
+}
