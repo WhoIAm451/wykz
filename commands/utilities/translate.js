@@ -208,7 +208,7 @@ module.exports= {
     
     
                     translate(args, {to: toto}).then(res => {
-                        message.channel.send(res)
+                        message.channel.send(res.text)
     
                     }).catch(err => {
                         console.error(err)
