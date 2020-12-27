@@ -16,7 +16,7 @@ module.exports = {
             prefixSchema.findOne({ Guild : message.guild.id }, async(err, data) => {
                 if(err) throw err;
                 if(data) {
-                    prefixSchema.findOneAndDelete({ Guild : message.guild.id })
+                    await prefixSchema.findOneAndDelete({ Guild : message.guild.id })
                     data = new prefixSchema({
                         Guild : message.guild.id,
                         Prefix : res
