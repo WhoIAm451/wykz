@@ -15,11 +15,11 @@ module.exports = {
             .setColor(process.env.embedcolor)
 
         if(!isBotOwner) {
-            message.channel.send("This is an owner only command.")
+            return message.channel.send("This is an owner only command.")
         }
 
         if(!args.join(' ')) {
-            message.channel.send("Please enter some code to evaluate")
+            return message.channel.send("Please enter some code to evaluate")
         }
     
 
