@@ -10,11 +10,11 @@ module.exports = {
   run: async (client, message, args) => {
     let member = message.mentions.members.first() || message.guild.members.cache.get(userArgs[0]) || message.guild.members.cache.find(x => x.user.username.toLowerCase() === userArgs.slice(0).join(" ") || x.user.username === userArgs[0]) || message.member || message.author;
 
-    if (!user && args.slice().length === 0) {
-      user = message.author;
+    if (!member && args.slice().length === 0) {
+      member = message.author;
     }
-    else if (user) {
-      if (user.bot) return message.channel.send(user.displayAvatarURL( {format: 'png', dynamic: true, size: 4096} ));
+    else if (member) {
+      if (member.bot) return message.channel.send(member.displayAvatarURL( {format: 'png', dynamic: true, size: 4096} ));
     }
     else {
         const fetchedMember = await message.guild.members.fetch(args.slice().join(' '));
